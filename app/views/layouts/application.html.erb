@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SiteWeb</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body background="https://www.pinguinweb.de/wp-content/uploads/2016/02/abstract-grey-low-polygon-background.jpg">
+    <header>
+<%= render 'layouts/navbar' %>
+</header>
+<%= render 'layouts/banner' %>
+    <%= yield %>
+  </body>
+  <footer>
+
+  <%= render 'layouts/footer' %>
+
+</footer>
+</html>
